@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'poppins'sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    
+ }
+ .show-btn{
+   
+     padding: 10px 20px;
+     font-size: 20px;
+     font-weight: 20px;
+     color: #3498db;
+     cursor: pointer;
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+ }
+ nav{
+     width: 100%;
+     height: 65px;
+     position: relative;
+     background:  -webkit-linear-gradient(right,#56d8e4,#9f01ea,#56d8e4,#9f01ea);
+     box-shadow: 0px 2px 8px 0px #333;
+
+
+ }
+.nav-container{
+    width: 1000px;
+    margin:0 auto;
+    position: relative;
+    
+}
+.nav-container .logo{
+    width:200px;
+    height: 65px;
+  float:left;
+}
+.menu{
+    width:100%;
+    height: 65px;
+  
+}
+.menu>.menu-content{
+    width:200px;
+    height: 65px;
+    float:right;
+    font-family: sans-serif,Arial;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    position: relative;
+    color:#fff;
+    line-height: 65px;
+}.menu>.menu-content>a{
+    color:#fff;
+    text-decoration: none;
+
+}
+
+
+ .show-btn, .container{
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+
+
+ }
+ .container{
+     display: none;
+     background: #fff;
+     width: 500px;
+     padding:120px;
+     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+
+ }
+ input[type="checkbox"] {
+     display:none;
+ }
+ #show:checked~ .container{
+     display: block;
+ }
+ .container .close-btn{
+     position: absolute;
+     right: 20px;
+     top:15px;
+     font-size: 18px;
+ }
+ .container .close-btn:hover{
+     color:#3498db;
+ }
+ .container .text{
+     font-size: 35px;
+     font-weight: 600;
+     text-align: center;
+
+ } 
+ .container form{
+     margin-top: -20px;
+
+ }
+ .container form .data{
+ height: 45px;
+ width: 100%;
+ margin: 40px 0;
+ }
+ .container .data input{
+     height: 100%;
+     width: 100%;
+     padding-left:1;
+     font-size: 17px;
+     border: 1px solid lightgrey;
+
+ }
+ form .btn{
+     margin:30px 0;
+     height: 45px;
+     width: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+ form .btn .inner{
+    
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+
+    background: green;
+
+ }form .btn:hover button {
+     left:0;
+
+ }
+
+ form .btn  button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ .form { 
+    border-radius: 25px;
+     height: 55px; 
+    
+     }
